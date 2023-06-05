@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XNotes"
+             xmlns:models="clr-namespace:XNotes.Models"
+             x:Class="XNotes.NoteEntryPage"
+             Title="Note Entry">
+    <ScrollView VerticalOptions="FillAndExpand">
+        <StackLayout>
+            <Entry Text="{Binding Title}"
+                   Placeholder="Title"
+                   Margin="10, 20"/>
+            <Editor Text="{Binding Content}"
+                    Placeholder="Content"
+                    Margin="10, 0, 10, 20"
+                    AutoSize="TextChanges"/>
+            <Button Text="Save"
+                    Clicked="OnSaveClicked"
+                    Margin="10"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XNotes"
+             xmlns:models="clr-namespace:XNotes.Models"
+             x:Class="XNotes.NotesPage"
+             Title="Notes">
+
+    <StackLayout>
+        <ListView x:Name="notesList"
+                  ItemsSource="{Binding Notes}"
+                  HasUnevenRows="True"
+                  ItemTapped="OnNoteSelected">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10">
+                            <Label Text="{Binding Title}"
+                                   FontSize="16"
+                                   FontAttributes="Bold"/>
+                            <Label Text="{Binding LastModified, StringFormat='Last modified {0:d} at {0:t}'}"
+                                   FontSize="12"/>
+                        </StackLayout>
+                        <ViewCell.ContextActions>
+                            <MenuItem Clicked="OnEditClicked"
+                                      CommandParameter="{Binding .}"
+                                      Text="Edit" />
+                            <MenuItem Clicked="OnDeleteClicked"
+                                      CommandParameter="{Binding .}"
+                                      Text="Delete"
+                                      IsDestructive="True" />
+                        </ViewCell.ContextActions>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button Text="New Note"
+                Clicked="OnNewNoteClicked"
+                Margin="10"/>
+
+        <!-- New button to access hidden notes -->
+        <Button x:Name="hiddenNotesButton"
+                Text="X NOTE"
+                Clicked="OnHiddenNotesClicked"
+                Margin="10"/>
+
+    </StackLayout>
+</ContentPage>
