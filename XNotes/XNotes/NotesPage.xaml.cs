@@ -1,4 +1,5 @@
-﻿using Xamarin.Essentials;
+﻿using System;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using XNotes.Models;
 
@@ -88,6 +89,10 @@ namespace XNotes
             }
         }
 
-
+        // New method to handle the settings button click
+        private async void OnSettingsClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SettingsPage());
+        }
     }
 }

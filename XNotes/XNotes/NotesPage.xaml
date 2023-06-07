@@ -5,6 +5,10 @@
              xmlns:models="clr-namespace:XNotes.Models"
              x:Class="XNotes.NotesPage"
              Title="Notes">
+             
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Settings" Order="Primary" Priority="0" Clicked="OnSettingsClicked" />
+    </ContentPage.ToolbarItems>
 
     <StackLayout>
         <ListView x:Name="notesList"
@@ -47,4 +51,5 @@
                 Margin="10"/>
 
     </StackLayout>
+
 </ContentPage>

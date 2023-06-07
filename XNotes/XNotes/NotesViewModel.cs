@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using XNotes.Models;
 
@@ -74,7 +75,17 @@ namespace XNotes
             }
         }
 
-        
+        public void DeleteAllNotes()
+        {
+            Notes.Clear();
+            SaveNotes();
+        }
+
+        public void ResetPassword()
+        {
+            SecureStorage.Remove("user_password");
+        }
+
 
         public void SaveNotes()
         {

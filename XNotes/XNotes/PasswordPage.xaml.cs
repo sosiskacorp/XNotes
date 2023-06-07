@@ -14,7 +14,7 @@ namespace XNotes
         {
             // Save the user's password here, for example using SecureStorage:
             await SecureStorage.SetAsync("user_password", passwordEntry.Text);
-            await Navigation.PopAsync();
+            await Navigation.PushAsync(new NotesPage());
         }
     }
 }
