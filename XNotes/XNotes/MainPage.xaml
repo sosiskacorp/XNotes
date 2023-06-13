@@ -11,5 +11,10 @@
                 Clicked="OnStartClicked"
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand" />
+        <Button Text="Пользовательское соглашение"
+        Clicked="OnUserAgreementClicked"
+        HorizontalOptions="CenterAndExpand"
+        VerticalOptions="CenterAndExpand" />
+
     </StackLayout>
 </ContentPage>

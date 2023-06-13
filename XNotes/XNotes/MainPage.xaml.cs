@@ -11,7 +11,11 @@ namespace XNotes
             InitializeComponent();
         }
 
-        
+        private async void OnUserAgreementClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new UserAgreementPage());
+        }
+
 
         public async void OnStartClicked(object sender, EventArgs e)
         {
