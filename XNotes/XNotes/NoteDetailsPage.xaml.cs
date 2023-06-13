@@ -4,15 +4,19 @@ using XNotes.Models;
 namespace XNotes
 {
     public partial class NoteDetailsPage : ContentPage
-    {
-        private Note _note;
+{
+    private Note _note;
+    private NotesViewModel _viewModel;
 
-        public NoteDetailsPage(Note note)
-        {
-            InitializeComponent();
-            _note = note;
-            Title = _note.Title;
-            noteContentLabel.Text = _note.Content;
-        }
+    public NoteDetailsPage(Note note, NotesViewModel viewModel)
+    {
+        InitializeComponent();
+
+        _note = note;
+        _viewModel = viewModel;
+
+        BindingContext = _note;
     }
+}
+
 }

@@ -11,7 +11,7 @@ namespace XNotes
         {
             InitializeComponent();
 
-            _viewModel = new NotesViewModel();
+            _viewModel = new NotesViewModel(isHiddenNotesPage: true);
             BindingContext = _viewModel;
         }
 
@@ -29,26 +29,26 @@ namespace XNotes
 
         private async void OnNewHiddenNoteClicked(object sender, System.EventArgs e)
         {
-            var newNote = new Note();
-            await Navigation.PushAsync(new NoteEntryPage(newNote));
+            var newNote = new Note { IsHidden = true };
+            await Navigation.PushAsync(new NoteEntryPage(newNote, _viewModel));
         }
 
         private async void OnNoteSelected(object sender, ItemTappedEventArgs e)
         {
             var selectedNote = e.Item as Note;
-            await Navigation.PushAsync(new NoteDetailsPage(selectedNote));
+            await Navigation.PushAsync(new NoteDetailsPage(selectedNote, _viewModel));
         }
 
         private async void OnEditClicked(object sender, System.EventArgs e)
         {
             var note = (sender as MenuItem).CommandParameter as Note;
-            await Navigation.PushAsync(new NoteEntryPage(note));
+            await Navigation.PushAsync(new NoteEntryPage(note, _viewModel));
         }
 
         private void OnDeleteClicked(object sender, System.EventArgs e)
         {
             var note = (sender as MenuItem).CommandParameter as Note;
-            _viewModel.Notes.Remove(note);
+            _viewModel.HiddenNotes.Remove(note);
             _viewModel.SaveNotes();
         }
 

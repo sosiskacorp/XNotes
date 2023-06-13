@@ -1,7 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using XNotes.Models;
@@ -13,7 +11,9 @@ namespace XNotes
         public event PropertyChangedEventHandler PropertyChanged;
 
         private ObservableCollection<Note> _notes;
+        private ObservableCollection<Note> _hiddenNotes;
         private Note _selectedNote;
+        public bool _isHiddenNotesPage;
 
         public ObservableCollection<Note> Notes
         {
@@ -22,6 +22,16 @@ namespace XNotes
             {
                 _notes = value;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Notes)));
+            }
+        }
+
+        public ObservableCollection<Note> HiddenNotes
+        {
+            get { return _hiddenNotes; }
+            set
+            {
+                _hiddenNotes = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(HiddenNotes)));
             }
         }
 
@@ -35,20 +45,44 @@ namespace XNotes
             }
         }
 
-        public NotesViewModel()
+        public NotesViewModel(bool isHiddenNotesPage = false)
         {
-            LoadNotes();
+            _isHiddenNotesPage = isHiddenNotesPage;
+
+            if (_isHiddenNotesPage)
+            {
+                LoadHiddenNotes();
+            }
+            else
+            {
+                LoadNotes();
+            }
 
             MessagingCenter.Subscribe<NoteEntryPage, Note>(this, "AddOrUpdateNote", (sender, arg) =>
             {
-                if (!Notes.Contains(arg))
+                if (!arg.IsHidden)
                 {
-                    Notes.Add(arg);
+                    if (!Notes.Contains(arg))
+                    {
+                        Notes.Add(arg);
+                    }
+                    else
+                    {
+                        var index = Notes.IndexOf(arg);
+                        Notes[index] = arg;
+                    }
                 }
                 else
                 {
-                    var index = Notes.IndexOf(arg);
-                    Notes[index] = arg;
+                    if (!HiddenNotes.Contains(arg))
+                    {
+                        HiddenNotes.Add(arg);
+                    }
+                    else
+                    {
+                        var index = HiddenNotes.IndexOf(arg);
+                        HiddenNotes[index] = arg;
+                    }
                 }
 
                 SaveNotes();
@@ -58,7 +92,7 @@ namespace XNotes
 
         ~NotesViewModel()
         {
-            MessagingCenter.Unsubscribe<NoteEntryPage, Note>(this, "AddOrUpdateNote");
+            MessagingCenter.Unsubscribe <NoteEntryPage, Note>(this, "AddOrUpdateNote");
         }
 
         public void LoadNotes()
@@ -75,9 +109,31 @@ namespace XNotes
             }
         }
 
+        public void LoadHiddenNotes()
+        {
+            var hiddenNotesJson = Application.Current.Properties.ContainsKey("HiddenNotes") ? (string)Application.Current.Properties["HiddenNotes"] : null;
+
+            if (hiddenNotesJson != null)
+            {
+                HiddenNotes = Newtonsoft.Json.JsonConvert.DeserializeObject<ObservableCollection<Note>>(hiddenNotesJson);
+            }
+            else
+            {
+                HiddenNotes = new ObservableCollection<Note>();
+            }
+        }
+
         public void DeleteAllNotes()
         {
-            Notes.Clear();
+            if (_isHiddenNotesPage)
+            {
+                HiddenNotes.Clear();
+            }
+            else
+            {
+                Notes.Clear();
+            }
+
             SaveNotes();
         }
 
@@ -89,14 +145,29 @@ namespace XNotes
 
         public void SaveNotes()
         {
-            var notesJson = Newtonsoft.Json.JsonConvert.SerializeObject(Notes);
-            Application.Current.Properties["Notes"] = notesJson;
-            Application.Current.SavePropertiesAsync();
+            if (_isHiddenNotesPage)
+            {
+                var hiddenNotesJson = Newtonsoft.Json.JsonConvert.SerializeObject(HiddenNotes);
+                Application.Current.Properties["HiddenNotes"] = hiddenNotesJson;
+                Application.Current.SavePropertiesAsync();
+            }
+            else
+            {
+                var notesJson = Newtonsoft.Json.JsonConvert.SerializeObject(Notes);
+                Application.Current.Properties["Notes"] = notesJson;
+                Application.Current.SavePropertiesAsync();
+            }
         }
 
         public void DeleteNote()
         {
-            if (SelectedNote != null)
+            if (_isHiddenNotesPage && SelectedNote != null)
+            {
+                HiddenNotes.Remove(SelectedNote);
+                SelectedNote = null;
+                SaveNotes();
+            }
+            else if (!_isHiddenNotesPage && SelectedNote != null)
             {
                 Notes.Remove(SelectedNote);
                 SelectedNote = null;
@@ -109,7 +180,7 @@ namespace XNotes
             if (SelectedNote != null)
             {
                 // Открываем страницу редактирования заметки, передавая выбранную заметку в качестве параметра.
-                App.Current.MainPage.Navigation.PushAsync(new NoteEntryPage(SelectedNote));
+                App.Current.MainPage.Navigation.PushAsync(new NoteEntryPage(SelectedNote, this));
             }
         }
     }

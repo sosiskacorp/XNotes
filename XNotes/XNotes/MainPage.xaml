@@ -3,13 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XNotes.MainPage">
     <StackLayout>
-        <Label Text="ДОБРО ПОЖАЛОВАТЬ В XNOTES!"
-               FontSize="36"
+        <Image Source="logo"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="CenterAndExpand"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center"/>
-        <Button Text="Начать"
+               Aspect="AspectFit"/>
+        <Button Text="START"
                 Clicked="OnStartClicked"
                 HorizontalOptions="CenterAndExpand"
                 VerticalOptions="CenterAndExpand" />

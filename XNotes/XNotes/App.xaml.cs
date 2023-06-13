@@ -25,9 +25,8 @@ namespace XNotes
         protected override void OnSleep()
         {
             base.OnSleep();
-            if (MainPage != null)
+            if (MainPage != null && MainPage.BindingContext is NotesViewModel notesViewModel)
             {
-                var notesViewModel = (NotesViewModel)MainPage.BindingContext;
                 notesViewModel.SaveNotes();
             }
         }

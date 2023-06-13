@@ -39,7 +39,7 @@ namespace XNotes
 
         private async void OnResetAppClicked(object sender, EventArgs e)
         {
-            bool answer = await DisplayAlert("Подтверждение", "Вы уверены, что хотите сбросить приложение? Все заметки будут удалены.", "Да", "Нет");
+            bool answer = await DisplayAlert("Confirm", "Are you sure you want to reset the app? All notes will be deleted.", "Yes", "No");
 
             if (answer)
             {

@@ -5,14 +5,14 @@
     x:Class="XNotes.SettingsPage">
     <ContentPage.Content>
         <StackLayout>
-    <Label Text="Смена пароля" FontSize="Medium" HorizontalOptions="Center"/>
-    <Entry x:Name="currentPasswordEntry" Placeholder="Старый пароль" IsPassword="True"/>
-    <Entry x:Name="newPasswordEntry" Placeholder="Новый пароль" IsPassword="True"/>
-    <Entry x:Name="confirmPasswordEntry" Placeholder="Подтвердите пароль" IsPassword="True"/>
-    <Button Text="Изменить пароль" Clicked="OnChangePasswordClicked"/>
+    <Label Text="Change password" FontSize="Medium" HorizontalOptions="Center"/>
+    <Entry x:Name="currentPasswordEntry" Placeholder="Old Password" IsPassword="True"/>
+    <Entry x:Name="newPasswordEntry" Placeholder="New password" IsPassword="True"/>
+            <Entry x:Name="confirmPasswordEntry" Placeholder="Confirm the password" IsPassword="True"/>
+    <Button Text="Change password" Clicked="OnChangePasswordClicked"/>
 
-    <Label Text="Сброс приложения" FontSize="Medium" HorizontalOptions="Center"/>
-    <Button Text="Сбросить приложение" Clicked="OnResetAppClicked"/>
+            <Label Text="Reset app" FontSize="Medium" HorizontalOptions="Center"/>
+            <Button Text="Reset App" Clicked="OnResetAppClicked"/>
 </StackLayout>
 
     </ContentPage.Content>

@@ -39,20 +39,22 @@ namespace XNotes
         private async void OnNewNoteClicked(object sender, System.EventArgs e)
         {
             var newNote = new Note();
-            await Navigation.PushAsync(new NoteEntryPage(newNote));
+            await Navigation.PushAsync(new NoteEntryPage(newNote, _viewModel));
         }
 
         private async void OnNoteSelected(object sender, ItemTappedEventArgs e)
         {
             var selectedNote = e.Item as Note;
-            await Navigation.PushAsync(new NoteDetailsPage(selectedNote));
+            await Navigation.PushAsync(new NoteDetailsPage(selectedNote, _viewModel));
         }
 
-        private async void OnEditClicked(object sender, System.EventArgs e)
+
+        private async void OnEditClicked(object sender, EventArgs e)
         {
             var note = (sender as MenuItem).CommandParameter as Note;
-            await Navigation.PushAsync(new NoteEntryPage(note));
+            await Navigation.PushAsync(new NoteEntryPage(note, _viewModel));
         }
+
 
         private void OnDeleteClicked(object sender, System.EventArgs e)
         {

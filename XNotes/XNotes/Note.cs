@@ -7,6 +7,7 @@ namespace XNotes.Models
         public string Title { get; set; }
         public string Content { get; set; }
         public DateTime LastModified { get; set; }
+        public bool IsHidden { get; set; }
 
         public void UpdateNote(Note note)
         {
