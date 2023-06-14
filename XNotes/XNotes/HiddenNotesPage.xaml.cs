@@ -18,7 +18,7 @@ namespace XNotes
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            _viewModel.LoadNotes();
+            _viewModel.LoadHiddenNotes();
         }
 
         protected override void OnDisappearing()

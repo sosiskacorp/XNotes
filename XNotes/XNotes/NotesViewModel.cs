@@ -143,6 +143,7 @@ namespace XNotes
         }
 
 
+
         public void SaveNotes()
         {
             if (_isHiddenNotesPage)

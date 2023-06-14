@@ -51,9 +51,10 @@ namespace XNotes
                 // Удаляем все заметки
                 notesViewModel.DeleteAllNotes();
 
-                await Navigation.PushAsync(new MainPage());
-                NavigationPage.SetHasBackButton(this, false);
+                await Navigation.PopToRootAsync(); // закрываем все предыдущие страницы
 
+                await Navigation.PushAsync(new MainPage()); // переходим на главную страницу
+                NavigationPage.SetHasBackButton(this, false);
             }
         }
 

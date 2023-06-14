@@ -4,115 +4,117 @@
              x:Class="XNotes.UserAgreementPage">
     <ScrollView>
         <StackLayout Padding="10">
-            <Label Text="Пользовательское соглашение" FontSize="Large" />
-            <Label Text="ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ ДЛЯ ПРИЛОЖЕНИЯ
-1. ОПРЕДЕЛЕНИЕ ПОНЯТИЙ
-В тексте настоящего Соглашения нижеизложенным терминам дано следующее значение:
-&quot;Компания&quot;, &quot;Мы&quot;, &quot;Наш&quot;, &quot;Нас&quot;, &quot;Нами&quot; или какие-либо другие схожие производные (в зависимости от контекста) означает следующее лицо: ГАПОНЕНКО АЛЕКСАНДР, КЕТОВА АНАСТАСИЯ 107Б1, адрес местонахождения: ВКИ НГУ (включая, его филиалы и представительства как на территории Российской Федерации, так и за ее пределами, а также какие-либо другие лица, созданные в результате реорганизации Компании), которые являются владельцами Приложения или им управляют.
-&quot;Контент приложения&quot; означает все объекты, размещенные Компанией и/или третьими лицами (с разрешения Компании) в Приложении, в том числе элементы дизайна, текст, графические изображения, иллюстрации, виртуальные объекты, видео, программы, музыка, звуки, информация, уведомления и какие-либо другие схожие объекты, их подборки или комбинации.
-&quot;Обновления&quot; означает программный патч или программный пакет для Приложения, который время от времени выпускается Компанией, предлагается для бесплатной загрузки Пользователями, которые уже используют Приложение, и направлен на фиксацию неработающих функций Приложения, устранение багов (ошибок) в работе Приложения или внедрение небольших программных компонентов для обеспечения большей безопасности и совместимости Приложения с устройствами.
-&quot;Платформа&quot; означает облачную платформу, на которой Компания разместила Приложение для его последующего скачивания Пользователем. Настоящее Приложение доступно для скачивания из Google Play.
-&quot;ПО приложения&quot; означает программное обеспечение, разработанное Компанией (и/или третьими лицами по поручению Компании) для Приложения, включая, однако не ограничиваясь, весь софт, скрипты, коды (HTML коды), программы и тп.
-&quot;Пользователь&quot;, &quot;Вы&quot;, &quot;Ваш&quot;, &quot;Вас&quot;, &quot;Вами&quot; или какие-либо другие схожие производные (в зависимости от контекста) означает лицо, которое (1) пользуется Приложением и получило доступ к Услугам; и (2) дало свое согласие на соблюдение правил пользования Приложением, изложенных в тексте данного Соглашения, путем использования Приложения.
-&quot;Приложение&quot; означает следующее приложение: XNotes, которое Пользователь загружает через Платформу на смартфон или другое устройство.
-&quot;Услуги&quot; означает совокупно Контент приложения и ПО приложения.
-&quot;In-app покупка&quot; означает получение Пользователем за плату дополнительных возможностей и/или функционала для Приложения и/или приобретение каких-либо виртуальных товаров/услуг в рамках Приложения.
+            <Label Text="User Agreement" FontSize="Large" />
+            <Label Text="USER AGREEMENT FOR THE APPLICATION
+1. DEFINITION OF TERMS
+Throughout this Agreement, the following terms have the following meaning:
+&quot;Company&quot;, &quot;We&quot;, &quot;Our&quot;, &quot;Us&quot;, &quot;Us&quot; or any other similar derivative (depending on the context) means the following person: ALEXANDER GAPONENKO, ANASTASIA KETOVA 107B1, address of location: VKI NSU (including, its branches and representative offices both within and outside the Russian Federation, as well as any other persons created as a result of a reorganization of the Company), who own or operate the Application.
+Application Content&quot; means all objects placed by the Company and/or third parties (with the permission of the Company) in the Application, including design elements, text, graphics, illustrations, virtual objects, videos, programs, music, sounds, information, notifications and any other similar objects, collections or combinations thereof.
+Updates&quot; means a software patch or software package for the Application that is released by the Company from time to time, offered for free download by Users who are already using the Application, and is intended to fix features of the Application that are not working, fix bugs in the Application or implement small software components to make the Application more secure and compatible with devices.
+Platform&quot; means the cloud-based platform on which the Company has made the Application available for subsequent download by the User. This Application is available for download from Google Play.
+&quot;Application Software&quot; means the software developed by the Company (and/or third parties on behalf of the Company) for the Application, including, but not limited to, all software, scripts, codes (HTML codes), programs, etc.
+The term &quot;User&quot;, &quot;You&quot;, &quot;Your&quot;, &quot;You&quot;, &quot;You&quot; or any similar derivative (as the context may require) means a person who (1) uses the Application and has accessed the Services; and (2) has agreed to comply with the Application terms of use set forth in the text of this Agreement by using the Application.
+Application&quot;Application&quot; means the following application: XNotes, which the User downloads via the Platform to a smartphone or other device.
+&quot;Services&quot; means collectively, the App Content and the App Software.
+&quot;In-app purchase&quot; means the receipt by the User, for a fee, of additional features and/or functionality for the Application and/or the purchase of any virtual goods/services within the Application.
 
 
-2. ПРИСОЕДИНЕНИЕ К СОГЛАШЕНИЮ
-Общие положения
-2.1. Настоящее Пользовательское соглашение (далее &quot;Соглашение&quot;) определяет правила и порядок использования Приложения, права и обязанности Пользователей, а также регулирует поведение Пользователей при получении доступа к Приложению и Услугам.
-2.2. Пользователь принимает условия данного Соглашения посредством продолжения использования Приложения.
-2.3. Данное Соглашение является обязательным для его сторон (т.е. для Компании и Пользователя). Уступка Пользователем своих прав по данному Соглашению возможна только после получения предварительного письменного согласия от Компании.
-2.4. Если Вы являетесь законным представителем (родителем, опекуном) несовершеннолетнего Пользователя, в таком случае Вы автоматически соглашаетесь от своего имени и от имени такого несовершеннолетнего Пользователя на условия данного Соглашения.
-Предупреждение для пользователей
-2.5. Если Пользователь осуществляет доступ к Приложению и/или его Услугам через Платформу или социальные сети (к примеру, Facebook, Vkontakte, Одноклассники), в таком случае Пользователь автоматически считается таким, который принял условия пользовательского соглашения такой Платформы или социальной сети.
-2.6. Пользователь признает, что его соглашение с провайдером мобильной сети (далее &quot;Провайдер&quot;) будет применяться к использованию Пользователем данного Приложения. Пользователь также признает, что Провайдер может взимать с Пользователя время от времени плату за услуги передачи данных при использовании отдельных функций Приложения, а также какие-либо иные сборы и платежи, возникающие в связи с такой передачей и за которые Пользователь обязуется нести ответственность. Если Пользователь не является плательщиком счетов Провайдера на смартфоне или другом устройстве, используемом для доступа в Приложение, предполагается, что такой Пользователь получил разрешение от плательщика счета на использование Приложения.
-2.7. Пользователь является единственным ответственным лицом за проверку и контроль соответствия устанавливаемого Приложения техническим особенностям/возможностям смартфона или иного устройства и/или других ограничений, которые могут быть применимы к Пользователю и/или его смартфону или другому устройству третьими лицами, включая Интернет провайдера.
 
 
-3. ПОЛЬЗОВАТЕЛИ ПРИЛОЖЕНИЯ
-Общие критерии и возраст
-3.1. Для использования Приложения Пользователи должны соответствовать следующим критериям (совокупно):
-(1) быть не младше 11-лет; и
-(2) не быть ограниченными в праве доступа к Приложению и Услугам на основании решения суда, вступившего в законную силу, или в случаях, предусмотренных действующим законодательством или условиями данного Соглашения.
+2. ADHERENCE TO THE AGREEMENT
+General provisions
+This User Agreement (hereinafter &quot;Agreement&quot;) defines the rules and procedures for the use of the Application, the rights and obligations of Users, and regulates the behavior of Users when accessing the Application and Services.
+2.2 The User accepts the terms of this Agreement by continuing to use the Application.
+2.3 This Agreement is binding on its parties (i.e. the Company and the User). Assignment by the User of their rights under this Agreement is possible only after receiving prior written consent from the Company.
+If you are a legal representative (parent, guardian) of an underage User, in this case you automatically agree to the terms of this Agreement on your own behalf and on behalf of such an underage User.
+Warning to Users
+If the User accesses the Application and/or its Services via the Platform or social networks (e.g. Facebook, Vkontakte, Odnoklassniki), in such case, the User is automatically deemed to have accepted the terms of the User Agreement of such Platform or social network.
+2.6 The User acknowledges that his/her agreement with the Mobile Network Provider (hereinafter the &quot;Provider&quot;) shall apply to the User's use of the Application. The User also acknowledges that the Provider may charge the User from time to time for data transmission services when using certain features of the Application as well as any other fees and charges arising in connection with such transmission and for which the User agrees to be responsible. If the User is not the bill payer of the Provider on the smartphone or other device used to access the Application, it is assumed that such User has received permission from the bill payer to use the Application.
+2.7 The User is the sole person responsible for checking and monitoring the compliance of the installed Application with the technical features/capabilities of the smartphone or other device and/or other restrictions that may be applicable to the User and/or its smartphone or other device by third parties, including the Internet Service Provider.
 
 
-4. ИНТЕЛЛЕКТУАЛЬНАЯ СОБСТВЕННОСТЬ
-MIT Лицензия
-Авторские права (c) [2023] [Гапоненко Александр]
-Настоящим предоставляется бесплатная, неисключительная лицензия без права передачи и сублицензии для любого лица, получившего копию данного программного обеспечения и связанных с ним файлов документации (далее - &quot;Программное обеспечение&quot;), для использования Программного обеспечения без ограничений, включая, но не ограничиваясь правом на использование, копирование, изменение, объединение, публикацию, распространение, сублицензирование и/или продажу копий Программного обеспечения, а также лицам, которым предоставляется данное Программное обеспечение, при условии, что вся копия данного уведомления об авторских правах и это разрешение будут включены во все копии или значительные части данного Программного обеспечения.
-Пользовательская лицензия 
-4.1. Получивший лицензию на использование Программного обеспечения пользователь получает неисключительную, без права передачи и сублицензии, лицензию ТОЛЬКО для личного (некоммерческого) пользования (далее - &quot;Пользовательская лицензия&quot;). Пользователь обязуется не использовать Программное обеспечение в каких-либо других целях. Получая данный Программный продукт, Пользователь автоматически соглашается с условиями данного Соглашения. 
-4.2. Пользовательская лицензия прекращает свое действие автоматически при удалении Программного обеспечения. Никакие положения настоящего Соглашения не могут быть истолкованы как предоставление Пользователю каких-либо других лицензий на использование объектов интеллектуальной собственности Компании, кроме тех, которые предусмотрены выше.
-4.3. Компания является обладателем всех прав на интеллектуальную собственность, включая все имущественные права на Программное обеспечение и его содержимое, за исключением тех случаев, когда такие права принадлежат третьим лицам. Программное обеспечение и его содержимое защищены авторским правом в соответствии с действующим законодательством Российской Федерации и международными договорами, и соглашениями об охране объектов интеллектуальной собственности. 
-4.4. Пользователи не имеют права копировать, воспроизводить, модифицировать, компилировать, распространять, отображать, публиковать, скачивать, передавать, продавать (в полном объеме или частично), отчуждать любым способом с оплатой или безвозмездно, передавать в сублицензию, каким-либо иным образом распространять или использовать Программное обеспечение и его содержимое, за исключением случаев, когда такие действия прямо разрешены условиями данного соглашения или действующим законодательством Российской Федерации. 
-4.5. Никакие положения данного Соглашения не могут быть толкованы как передача Пользователю каких-либо исключительных прав на Программное обеспечение и/или его содержимое.
+3. APPLICATION USERS
+General criteria and age
+3.1 Users must meet the following criteria (cumulatively) in order to use the Application:
+(1) be at least 11 years of age; and
+(2) not be restricted in their right of access to the Application and the Services on the basis of a legally enforceable judgment or in cases stipulated by applicable law or the terms of this Agreement.
 
 
-5. ПОРЯДОК РАБОТЫ С ПРИЛОЖЕНИЕМ
-Общие положения
-5.1. Пользователь обязуется соблюдать следующие правила при работе с Приложением:
-(1) соблюдать все обязательства, взятые на себя Пользователем в связи с присоединением к данному Соглашению; и
-(2) не совершать какие-либо действия (с использованием средств автоматизации или без таких средств), направленные на сбор каких-либо персональных данных других Пользователей; и
-(3) не предпринимать какие-либо действия и не помогать третьим лицам в совершении действий, направленных на подрыв работы Приложения и/или Услуг, включая, однако не ограничиваясь, (а) загружать вирусы или вредоносный код; (б) совершать действия, которые могут привести к отключению Приложения и/или Услуг, к нарушению нормальной работы Приложения или его программного обеспечения, или к ухудшению внешнего вида Приложения и/или Контента приложения.
-(4) не предпринимать какие-либо иные действия, которые являются незаконными, мошенническими, дискриминационными или вводящими в заблуждение.
+4. INTELLECTUAL PROPERTY
+MIT License
+Copyright (c) [2023] [Alexander Gaponenko]
+A royalty-free, non-exclusive, non-transferable, non-sublicensable license is hereby granted to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to use the Software without restriction, including but not limited to the right to use, copy, modify, merge, publish, distribute, sublicense and/or sell copies of the Software, and to persons to whom this Software is provided.
+User License 
+4.1 A user who receives a license to use the Software receives a non-exclusive, non-transferable, non-sublicensable license for personal (non-commercial) use ONLY (the &quot;User License&quot;). The User agrees not to use the Software for any other purpose. By receiving this Software, the User automatically agrees to the terms of this Agreement. 
+4.2 The User License terminates automatically upon uninstallation of the Software. No provisions of this Agreement may be construed as granting the User any other licenses to use the intellectual property of the Company other than those provided above.
+4.3 The Company is the owner of all intellectual property rights, including all proprietary rights to the Software and its contents, except to the extent that such rights belong to third parties. The Software and its contents are protected by copyright under the applicable laws of the Russian Federation and international treaties and agreements on the protection of intellectual property. 
+4.4 Users may not copy, reproduce, modify, compile, distribute, display, publish, download, transmit, sell (in whole or in part), alienate in any way with payment or gratuitously, sublicense, otherwise distribute or use the Software and its contents, unless such actions are expressly permitted by the terms of this agreement or the applicable laws of the Russian Federation. 
+4.5 Nothing in this Agreement shall be construed as conferring upon User any exclusive rights in the Software and/or its contents.
 
 
-6. РАЗМЕЩЕНИЕ РЕКЛАМЫ В ПРИЛОЖЕНИИ
-Размещение рекламы компанией
-6.1. Компания имеет право время от времени размещать какие-либо рекламные или маркетинговые материалы.
-Размещение рекламы третьими лицами
-6.2. Контент приложения может содержать ссылки на веб-сайты третьих лиц и/или рекламные или маркетинговые материалы о товарах/услугах, предоставляемых такими третьими лицами (далее &quot;Реклама третьих лиц&quot;). КОМПАНИЯ НЕ БЕРЕТ НА СЕБЯ КАКУЮ-ЛИБО ОТВЕТСТВЕННОСТЬ (1) ЗА СОДЕРЖАНИЕ РЕКЛАМЫ ТРЕТЬИХ ЛИЦ, А ТАКЖЕ ЗА НАЛИЧИЕ, КАЧЕСТВО И БЕЗОПАСНОСТЬ ПРОДВИГАЕМЫХ ТОВАРОВ/УСЛУГ В ТАКОЙ РЕКЛАМЕ; и (2) ЗА КАКИЕ-ЛИБО УБЫТКИ, ПОТЕРИ ИЛИ УЩЕРБ, ПОНЕСЕННЫЕ ИЛИ ПРИЧИНЕННЫЕ ПОЛЬЗОВАТЕЛЮ В РЕЗУЛЬТАТЕ ПРОЧТЕНИЯ ИМ ТАКОЙ РЕКЛАМЫ, ИСПОЛЬЗОВАНИЯ ИМ ПРОДВИГАЕМЫХ В РЕКЛАМЕ ТРЕТЬИХ ЛИЦ ТОВАРОВ/УСЛУГ.
-6.3. В случае перехода на другой сайт через размещенную Рекламу третьих лиц, Компания не может гарантировать, что такой веб-сайт является безопасным для Пользователя и/или его компьютера. Ни что в тексте данного Соглашения не должно быть истолковано как заверение, поощрение, рекомендация или побуждение Пользователя воспользоваться Рекламой третьих лиц, посетить какие-либо сайты третьих лиц, а также попробовать, приобрести, воспользоваться какими-либо товарами/услугами третьих лиц.
+5. PROCEDURE FOR WORKING WITH THE APPLICATION
+General Terms of Use
+5.1 The User agrees to comply with the following rules when using the Application:
+(1) comply with all obligations assumed by the User in connection with joining this Agreement; and
+(2) not perform any actions (with or without the use of automation tools) aimed at the collection of any personal data of other Users; and
+(3) not take any action or assist third parties in any way to undermine the Application and/or Services, including, but not limited to, (a) downloading viruses or malicious code; (b) taking actions that may cause the Application and/or Services to shut down, disrupt the normal operation of the Application or its software, or degrade the appearance of the Application and/or Application Content.
+(4) not take any other actions that are illegal, fraudulent, discriminatory or misleading.
 
 
-7. ПРОВЕДЕНИЕ ОПЛАТЫ ЧЕРЕЗ ПРИЛОЖЕНИЕ
-7.1. Приложение не предоставляет возможность покупки каких-либо товаров/услуг через него.
+6. ADVERTISING IN THE APP
+Placement of advertisements by the Company
+6.1 The Company may from time to time place any advertising or marketing materials.
+Placement of advertisements by third parties
+6.2 The application content may contain links to third parties' websites and/or advertising or marketing materials about products/services provided by such third parties (hereinafter &quot;Third Party Advertising&quot;). COMPANY DOES NOT ASSUME ANY RESPONSIBILITY (1) FOR THE CONTENT OF ANY THIRD PARTY ADVERTISING AND FOR THE AVAILABILITY, QUALITY AND SAFETY OF THE GOODS/SERVICES PROMOTED IN SUCH ADVERTISING; and (2) FOR ANY DAMAGES, LOSS OR DAMAGES ARISING TO THE USER AS A RESULT OF READING SUCH ADVERTISING OR USING THE PRODUCTS/SERVICES PROVIDED IN THIRD PARTY ADVERTISING.
+6.3 In case of switching to another website through the placed advertisements of third parties, the Company cannot guarantee that such website is safe for the User and/or his/her computer. Nothing in the text of this Agreement shall be construed as an assurance, encouragement, recommendation or inducement of the User to use third-party Advertisements, to visit any third-party websites, or to try, purchase, use any third-party products/services.
 
 
-8. СОВЕРШЕНИЕ IN-APP ПОКУПОК
-8.1. Совершение каких-либо In-app покупок внутри Приложения не предусмотрено.
+7. MAKING PAYMENTS THROUGH THE APP
+7.1 The Application does not provide the ability to purchase any goods/services through it.
 
 
-9. ДОСТУП К ПРИЛОЖЕНИЮ
-Общие положения
-9.1. Компания оставляет за собой право изменить или модифицировать Контент приложения в любой момент без указания причины, по своему собственному усмотрению и без необходимости уведомления об этом Пользователя. Компания также оставляет за собой право модифицировать, прервать или прекратить работу части или всего Приложения в любой момент без какого-либо дополнительного уведомления. В связи с изложенным Компания не берет на себя какую-либо ответственность перед Пользователями или третьими лицами за любые произведенные изменения, модификации, удаления, упразднения, прекращения или перерывы в работе Приложения.
-9.2. Компания не гарантирует, что Приложение и Услуги будут доступными Пользователю постоянно. Время от времени Компания может сталкиваться с проблемами в работе оборудования, ПО приложения или другими неполадками, в связи с чем Компании может потребоваться время на изучение и устранение таких проблем. Такое устранение ошибок может привести к сбоям, задержкам или ошибкам в работе Приложения. Компания оставляет за собой право изменять, пересматривать, обновлять, приостанавливать, прекращать или иным образом изменять Приложение в любое время или по любой причине без предварительного уведомления. Пользователь соглашается с тем, что Компания не несет ответственности за какие-либо убытки, ущерб или неудобства, вызванные неспособностью Пользователя получить доступ или использовать Приложение во время простоя или прекращения работы Приложения. Ничто в условиях данного Соглашения не будет истолковано как обязывающее Нас поддерживать работу Приложения без остановок и сбоев.
-Предоставление обновлений
-9.3. Компания время от времени может предоставлять Обновления и требовать их инсталляции на смартфон или другое устройство Пользователя. В данном случае Пользователь является единственным ответственным лицом за установление Обновлений и несет полную ответственность за какие-либо убытки, потери, ущерб или упущенную выгоду, причиненную Пользователю несвоевременным установлением Обновлений или неустановлением их вовсе, несовместимостью установленных Обновлений и смартфона/другого устройства. Компания не предоставляет какую-либо техническую поддержку или интернет соединение Пользователю для возможности получения доступа к Услугам и/или их Обновлениям.
-Удаление аккаунта
-9.4. Пользователь имеет право в любой момент прекратить использование Приложения посредством удаления его со своего смартфона или другого устройства.
-9.5. В случае (1) нарушения Пользователем условий настоящего Соглашения или когда у Компании есть достаточные основания полагать, что такие нарушения были допущены; и/или (2) нарушения прав интеллектуальной собственности Компании, других Пользователей или третьих лиц; и/или (3) совершения действий, которые являются противозаконными, нарушают права и интересы Компании, других Пользователей или третьих лиц или подрывают работу Приложения или возможность использования Приложения другими Пользователями; и/или (4) Пользователь использует Услуги или Приложение таким образом, что это может повлечь юридическую ответственность для Компании в будущем; и/или (5) если этого требует действующее законодательство или компетентный государственный орган, Компания имеет право без предварительного уведомления в любой момент прекратить (остановить) доступ Пользователя к Приложению и Услугам посредством удаления его аккаунта.
-При наступлении обстоятельств, изложенных в предыдущем абзаце, Пользователю запрещено создавать какие-либо другие аккаунты в Приложении в будущем.
-9.6. Во всех случаях удаления аккаунта Пользователя или удаления Приложения со смартфона или другого устройства Пользователя все данные и информация, размещенные Пользователем в аккаунте и/или связанные с ним, будут безвозвратно удалены. Компания не берет на себя какую-либо ответственность за удаление таких данных и информации, а также за какой-либо вред, ущерб, убытки или упущенную выгоду, причиненную Пользователю таким удалением и/или отсутствием доступа к Услугам в целом.
+8. IN-APP PURCHASES
+8.1 In-app purchases are not provided within the Application.
 
 
-10. ЗАДАТЬ ВОПРОС
-10.1. Если у Вас есть вопросы касательно условий настоящего Соглашения или порядка/способа их исполнения, Вы можете адресовать нам свой вопрос следующим способом:
-Отправить письмо по следующему адресу: gaponenkoak@mer.ci.nsu.ru
-10.2. Сотрудники и представители Компании обязуются предпринять все возможные усилия для дачи ответа на Ваш запрос в течение разумного периода времени.
+9. ACCESS TO THE APPENDIX
+General provisions
+9.1 The Company reserves the right to change or modify the Content of the Application at any time and for any reason, at its sole discretion, without the need to notify the User. The Company also reserves the right to modify, interrupt or discontinue part or all of the Application at any time without any further notice. Therefore, the Company does not assume any liability to Users or third parties for any changes, modifications, deletions, suppression, termination or interruption of the Application.
+9.2 The Company does not guarantee that the Application and the Services will be available to the User at all times. From time to time the Company may encounter hardware, application software or other problems, which may require the Company to take time to investigate and correct such problems. Such troubleshooting may result in failures, delays or errors in the operation of the Application. Company reserves the right to change, revise, update, suspend, discontinue or otherwise modify the Application at any time or for any reason without notice. User agrees that Company shall not be liable for any loss, damage or inconvenience caused by the User's inability to access or use the Application during the downtime or termination of the Application. Nothing in the terms of this Agreement will be construed to obligate Us to keep the Application running without interruption or disruption.
+Provision of Updates
+9.3 The Company may from time to time provide Updates and require that they be installed on the User's smartphone or other device. In this case, the User is the sole person responsible for installing Updates and is fully responsible for any losses, damages or lost profits caused to the User by the late installation of Updates or not installing them at all, by the incompatibility of the installed Updates and the smartphone/other device. The Company does not provide any technical support or Internet connection for the User to access the Services and/or Updates.
+Account deletion
+9.4 The User has the right to stop using the Application at any time by deleting it from their smartphone or other device.
+9.5 If (1) the User violates the terms of this Agreement or if the Company has reasonable grounds to believe that such violations have occurred; and/or (2) the User violates the intellectual property rights of the Company, other Users or third parties; and/or (3) the User takes actions that are illegal, violate the rights and interests of the Company, other Users or third parties or undermine the operation of the Application or the ability of other Users to use the Application; and/or (4) the User uses the Services or the Application in any way.
+Under the circumstances set forth in the preceding paragraph, the User is prohibited from creating any other accounts in the Application in the future.
+9.6 In all cases of deleting the User's account or deleting the Application from the User's smartphone or other device, all the data and information placed by the User in the account and/or associated with it shall be irretrievably deleted. The Company does not assume any responsibility for the deletion of such data and information or for any harm, damage, losses or lost profits caused to the User by such deletion and/or lack of access to the Services in general.
 
 
-11. ОТВЕТСТВЕННОСТЬ
-11.1. НИ ПРИ КАКИХ ОБСТОЯТЕЛЬСТВАХ КОМПАНИЯ ИЛИ ЕЕ ПРЕДСТАВИТЕЛИ НЕ НЕСУТ ОТВЕТСТВЕННОСТЬ ПЕРЕД ПОЛЬЗОВАТЕЛЕМ ИЛИ ПЕРЕД ЛЮБЫМИ ТРЕТЬИМИ ЛИЦАМИ:
-(1) ЗА ЛЮБОЙ КОСВЕННЫЙ, СЛУЧАЙНЫЙ, НЕУМЫШЛЕННЫЙ УЩЕРБ, ВКЛЮЧАЯ УПУЩЕННУЮ ВЫГОДУ ИЛИ ПОТЕРЯННЫЕ ДАННЫЕ, ВРЕД ЧЕСТИ, ДОСТОИНСТВУ ИЛИ ДЕЛОВОЙ РЕПУТАЦИИ, ВЫЗВАННЫЙ ИСПОЛЬЗОВАНИЕМ ПРИЛОЖЕНИЯ, УСЛУГ ИЛИ ИНЫХ МАТЕРИАЛОВ, К КОТОРЫМ ПОЛЬЗОВАТЕЛЬ ИЛИ ИНЫЕ ЛИЦА ПОЛУЧИЛИ ДОСТУП С ПОМОЩЬЮ ПРИЛОЖЕНИЯ, ДАЖЕ ЕСЛИ КОМПАНИЯ ПРЕДУПРЕЖДАЛА ИЛИ УКАЗЫВАЛА НА ВОЗМОЖНОСТЬ ТАКОГО ВРЕДА; и
-(2) ЗА ДЕЙСТВИЯ ДРУГИХ ПОЛЬЗОВАТЕЛЕЙ, ЗА РАЗМЕЩАЕМЫЙ ПОЛЬЗОВАТЕЛЯМИ ПОЛЬЗОВАТЕЛЬСКИЙ КОНТЕНТ, ЗА ТОВАРЫ/УСЛУГИ, ПРЕДОСТАВЛЯЕМЫЕ ТРЕТЬИМИ ЛИЦАМИ ИЛИ ДРУГИМИ ПОЛЬЗОВАТЕЛЯМИ (ДАЖЕ ЕСЛИ ДОСТУП К НИМ БЫЛ ПРЕДОСТАВЛЕН ЧЕРЕЗ НАШЕ ПРИЛОЖЕНИЕ), К КОТОРЫМ ПОЛЬЗОВАТЕЛЬ ПОЛУЧИЛ ДОСТУП; и
-(3) в случаях прямо предусмотренных условиями настоящего Соглашения или нормой действующего законодательства.
-11.2. Наша ответственность за все что угодно, связанное с использованием Приложения и/или Услуг, ограничивается настолько сильно, насколько это допускается действующим законодательством.
+10. ASK A QUESTION
+10.1 If you have any questions about the terms of this Agreement or the manner/means of carrying them out, you may address your question to us as follows:
+Send an email to the following address: gaponenkoak@mer.ci.nsu.ru
+10.2 Employees and representatives of the Company undertake to make every effort to respond to your inquiry within a reasonable period of time.
 
 
-12. ПОРЯДОК РАЗРЕШЕНИЯ СПОРОВ
-12.1. В случае возникновения любых споров или разногласий, связанных с исполнением настоящего Соглашения, Пользователь и Компания приложат все усилия для их разрешения путем проведения переговоров между ними. В случае, если споры не будут разрешены путем переговоров, споры подлежат разрешению в порядке, установленном действующим законодательством Российской Федерации.
+11. LIABILITY
+11.1. IN NO EVENT SHALL THE COMPANY OR ITS REPRESENTATIVES BE LIABLE TO THE USER OR ANY THIRD PARTY
+(1) FOR ANY CONSEQUENTIAL, INCIDENTAL, UNINTENTIONAL DAMAGES, INCLUDING LOSS OF PROFITS OR LOST DATA, DAMAGE TO HONOR, DIGNITY, OR GOODWILL, ARISING FROM THE USE OF THE APPLICATION, SERVICES, OR OTHER MATERIALS ACCESSED BY THE USER OR OTHERS THROUGH THE APPLICATION, EVEN IF THE COMPANY HAS WARNED OR ADVISED OF THE POSSIBILITY OF SUCH DAMAGES; и
+(2) FOR THE ACTIONS OF OTHER USERS, FOR USER CONTENT POSTED BY USERS, FOR GOODS/SERVICES PROVIDED BY THIRD PARTIES OR OTHER USERS (EVEN IF ACCESSED THROUGH OUR APP) TO WHICH THE USER HAS GAINED ACCESS; и
+(3) as expressly provided by the terms of this Agreement or by applicable law.
+11.2 Our liability for anything in connection with the use of the Application and/or the Services is limited to the extent permitted by applicable law.
 
 
-13. ЗАКЛЮЧИТЕЛЬНЫЕ ПОЛОЖЕНИЯ
-13.1. Мы можем время от времени пересматривать, дополнять или изменять условия данного Соглашения. Такие изменения, как правило, не являются ретроспективными.
-КОМПАНИЯ НЕ БЕРЕТ НА СЕБЯ КАКУЮ-ЛИБО ОБЯЗАННОСТЬ ПО УВЕДОМЛЕНИЮ ПОЛЬЗОВАТЕЛЕЙ О ПРЕДСТОЯЩИХ ИЛИ СОСТОЯВШИХСЯ ИЗМЕНЕНИЯХ ТЕКСТА СОГЛАШЕНИЯ. Посредством присоединения к условиям данного Соглашения Пользователь также берет на себя обязательство периодически просматривать условия данного Соглашения на предмет их изменения или дополнения.
-Если после проведенных изменений или дополнений в тексте Соглашения Пользователь продолжает пользоваться Приложением, это значит, что он ознакомлен с изменениями или дополнениями и их принял в полном объеме без каких-либо возражений.
-13.2. Если иное прямо не указано в положениях настоящего Соглашения или прямо не вытекает из норм действующего законодательства, к условиям настоящего Договора применяется материальное право Российской Федерации.
-13.3. Если одно или несколько условий данного Соглашения утратило свою юридическую силу или признано недействительным согласно действующему законодательству, остальные условия Соглашения не теряют своей силы и продолжают действовать так, словно признанного недействительным или утратившим юридическую силу условия не существовало вовсе.
-13.4. Доступ к Приложению и его Услугам предоставляется Пользователю &quot;как есть&quot;, Мы не обещаем, не гарантируем, не подразумеваем, что Услуги и Приложение могут подходить или не подходить Вашим потребностям, целям, ожиданиям, и в связи с чем не гарантируем какого-либо специфического результата или последствия в результате использования Вами Приложения и его Услуг.
+12. DISPUTE RESOLUTION PROCEDURE
+12.1 In the event of any disputes or disagreements related to the performance of this Agreement, the User and the Company shall make every effort to resolve them through negotiations between them. If disputes are not resolved by negotiation, the disputes shall be resolved in the manner prescribed by the applicable laws of the Russian Federation.
+
+
+13. FINAL PROVISIONS
+13.1 We may revise, amend or change the terms of this Agreement from time to time. Such changes are generally not retrospective.
+THE COMPANY DOES NOT UNDERTAKE ANY OBLIGATION TO NOTIFY USERS OF IMPENDING OR PAST CHANGES TO THE TEXT OF THE AGREEMENT. By acceding to the terms of this Agreement, User also undertakes an obligation to periodically review the terms of this Agreement for changes or additions.
+If the User continues to use the Application after the changes or additions to the text of the Agreement have been made, it means that the User is familiar with the changes or additions and has accepted them in full without any objections.
+13.2 Unless otherwise expressly stated in the provisions of this Agreement or directly derived from the norms of the current legislation, the substantive law of the Russian Federation shall apply to the terms of this Agreement.
+13.3 If one or more provisions of this Agreement become invalid or invalid under the applicable laws, the remaining provisions of the Agreement shall not become invalid and shall continue to apply as if the invalid or invalidated provision did not exist at all.
+13.4 Access to the Application and its Services is provided to the User We do not promise, guarantee or imply that the Services and the Application may or may not suit your needs, purposes, expectations and therefore do not guarantee any specific result or effect from your use of the Application and its Services.
 "  />
         </StackLayout>
     </ScrollView>
